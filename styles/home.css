@@ -1,13 +1,23 @@
 .home {
     display: flex;
     flex-direction: column;
-    background: url(../src/home-img.png) no-repeat;
+    background-color: white;
     background-size: cover;
     background-position: center;
     height: 80vh;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 10%;
+    width: 50%;
+}
+
+.home-tudo {
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+}
+
+.home-img{
+    width: 32%;
 }
 
 .home-content {
@@ -40,7 +50,6 @@
     justify-content: space-between;
     width: 345px;
     height: 50px;
-
 }
 
 .home-btn a {
@@ -109,4 +118,66 @@
 
 .button:hover {
     box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width:  768px) and (max-width: 1024px ) {
+
+    .home-tudo{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-img {
+       width: 50%;
+       margin-bottom: 100px;
+    }
+    .box {
+        gap: 0px;
+        width: 280px;
+    }
+    .projects-box{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px ) {
+    .name {
+        font-size: 20px;
+    }
+    .nav-bar a {
+        font-size: 15px;
+    }
+    .home-tudo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        max-height: 700px;
+    }
+    .home-img {
+       width: 50%;
+       margin-bottom: 80px;
+    }
+    .home p {
+        font-size: 15px;
+        margin-bottom: 15px;;
+    }
+    .home h1 {
+        font-size: 25px;
+    }
+    .home h3 {
+        font-size: 20px;
+    }
+    .home-btn a {
+        width: 100px;
+        border-radius: 15px;
+    }
+    .projects-box{
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-input {
+        width: 300px;
+    }
 }
