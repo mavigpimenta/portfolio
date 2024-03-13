@@ -19,3 +19,18 @@ function toggleActive(event) {
     });
     event.target.classList.add('active');
 }
+
+let buttonOne = document.querySelector('.btn1');
+let buttonTwo = document.querySelector('.btn2');
+let contact = document.querySelector('.contact');
+let weare = document.querySelector('.project');
+
+buttonOne.addEventListener('click', function(event) {
+    event.preventDefault();
+    contact.scrollIntoView({behavior: 'smooth'});
+})
+
+buttonTwo.addEventListener('click', function(event) {
+    event.preventDefault();
+    weare.scrollIntoView({behavior: 'smooth'});
+})
