@@ -57,3 +57,8 @@ b {
     font-weight: 500;
     
 }
+
+.icons a {
+    align-items: center;
+    margin-right: 6px;
+}
