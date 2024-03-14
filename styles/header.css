@@ -11,12 +11,17 @@
     color: #FF66C4;
 }
 
+.nav-bar {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
 .nav-bar a {
     font-size: 18px;
     color: #0E2431;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
     transition: 0.3s;
     position: relative;
 }
@@ -27,7 +32,7 @@
     width: 0;
     height: 0.20rem;
     left: 0;
-    top: 2rem;
+    top: 120%;
     background-color: #FF66C4;
     border-radius: 10px;
     transition: 0.3s;

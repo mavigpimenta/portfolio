@@ -45,9 +45,10 @@
     margin-top: 10px;
 }
 
-.home-content .home-btn {
+.home-btn {
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
     width: 345px;
     height: 50px;
 }
@@ -140,7 +141,7 @@
     }
 }
 
-@media (max-width: 450px ) {
+@media (max-width: 649px) {
     .name {
         font-size: 20px;
     }
@@ -164,13 +165,14 @@
         margin-bottom: 15px;;
     }
     .home h1 {
+        margin-top: 100px;
         font-size: 25px;
     }
     .home h3 {
         font-size: 20px;
     }
     .home-btn a {
-        width: 100px;
+        width: 45%;
         border-radius: 15px;
     }
     .projects-box{
@@ -179,5 +181,68 @@
     }
     .contact-input {
         width: 300px;
+    }
+}
+
+@media (min-width: 650px) {
+    .nav-bar a {
+        font-size: 18px;
+    }
+    .home-tudo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        max-height: 700px;
+    }
+    .home-img {
+       width: 50%;
+       margin-bottom: 80px;
+    }
+    .home p {
+        font-size: 17px;
+        margin-bottom: 15px;;
+    }
+    .home h1 {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .home h3 {
+        font-size: 20px;
+    }
+    .home-btn a {
+        width: 45%;
+        border-radius: 15px;
+    }
+    .projects-box{
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-input {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-tudo {
+        display: flex;
+        justify-content: space-evenly;  
+        align-items: center;
+        flex-direction: row;
+    }
+    .home h1 {
+        margin-top: 100px;
+    }
+    .home-img {
+        width: 32%;
+        margin-top: 200px;
+    }
+    .home-btn a {
+        width: 45%;
+        border-radius: 20px;
+    }
+    .contact-input {
+        width: 500px;
     }
 }
